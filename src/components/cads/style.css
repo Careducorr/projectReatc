@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: black;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 90%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    color: #D21617;
+}
+
+.banner-1{
+    background-image: url('https://www.otempo.com.br/image/contentid/policy:1.2189948:1559583863/000-1H417H-jpg.jpg?f=3x2&w=1224');
+}
+
+.banner-2{
+    background-image: url('https://s2-glamour.glbimg.com/79SaNR8HJqsivwO4cSg5UnsnnmI=/0x0:3984x2656/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_ba3db981e6d14e54bb84be31c923b00c/internal_photos/bs/2022/o/T/SwHpy2TFmzAOevZttQ5A/zoe-kravitz-delineado-gatinho-4.jpg');
+}
+
+.banner-3{
+    background-image: url('https://variety.com/wp-content/uploads/2024/02/Jeffrey-Wright.jpg');
+
+}
+
+@media(max-width: 570px){
+    .cards-content{
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+    }
+
+}
+

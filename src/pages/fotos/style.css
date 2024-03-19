@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+#texto-fotos-container{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.514);
+}
+
+#fotos-span{
+    height: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#photo-container{
+    height: 450px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+}
+
+.card{
+    height: 200px;
+    width: 90%;
+    margin-top: 12.5px;
+    background-size: cover;
+}
+
+.photo1{
+    background-image: url('https://cdn.kinocheck.com/i/ovo6ge0ccj.jpg');
+}
+
+.photo2{
+    background-image: url('https://townsquare.media/site/442/files/2018/01/batman-returns.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89');
+}
+
+.photo3{
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/batman-review-1646354817.jpg');
+}
+
+.photo4{
+    background-image: url('https://cinepop.com.br/wp-content/uploads/2020/06/the-batman-1.jpg');
+}
+
+.photo5{
+    background-image: url('https://www.denofgeek.com/wp-content/uploads/2022/03/Robert-Pattinson-and-Zoe-Kravitz-as-The-Batman-and-Catwoman.jpeg?resize=768%2C432');
+}
+
+.photo6{
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEh5_Y45Y42JbTbf5jjVcvkSrPTak11b53pLULzZKuU7ALiy8EewBAbMAE-idsWypy2SKRYDPSRyRNHM2qmiVsk1aj8YyWYcxFAbfCAvt2ryrAqisMCj-geq_uqUWXttK7W5FfQ0hPVBW1hDqXnUoo-8WLJ0oxJGRrC4wQRcNipB53vsCLj_94a42Vee=w640-h338');
+}
+
+@media(max-width: 670px){
+    #photo-container{
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
+
+    .card{
+        height: 300px;
+        width: auto;
+        margin-top: 12.5px;
+        background-size: cover;
+    }
+}

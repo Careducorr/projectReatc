@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+#texto-container{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.514);
+}
+
+#texto-contato{
+    height: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+    transition: 0.5s;
+}
+
+label:hover{
+    color: #D21617;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: #D21617;
+    color: aliceblue;
+    padding: 8px, 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: #D21617;
+}
+
+#texto-container-responsive{
+    display: none;
+}
+
+@media(max-width: 670px){
+
+    
+#texto-container{
+    display: none;
+}
+
+    #texto-container-responsive{
+        display: flex;
+        background-color: rgba(255, 0, 0, 0.514);
+        height: 100px;
+        width: 100%;
+    }
+
+    #texto-contato{
+        font-size: 15px;
+    }
+
+}
